@@ -6,14 +6,31 @@
 //
 
 import SwiftUI
+import SwiftfulUI
 
 struct ContentView: View {
+    @State private var isActive = true
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            VStack {
+                Text("Hello, world!")
+                    .withBackground(color: isActive ? .red : .blue, cornerRadius: 10)
+                Text("Hello, world!")
+                    .withBorder(color: .red, width: 2, cornerRadius: 10)
+                
+                Text("Hello, world!")
+                     .withBackgroundAndBorder(backgroundColor: .red, borderColor: .blue, borderWidth: 2, cornerRadius: 10)
+                
+            }
+            .padding()
+            
+            Spacer()
+            
+            Button("Toggle it") {
+                isActive.toggle()
+            }
+            
         }
         .padding()
     }

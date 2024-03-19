@@ -11,6 +11,7 @@
 		5ED99F602BA9EB2900D3C2BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED99F5F2BA9EB2900D3C2BD /* ContentView.swift */; };
 		5ED99F622BA9EB2B00D3C2BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED99F612BA9EB2B00D3C2BD /* Assets.xcassets */; };
 		5ED99F652BA9EB2B00D3C2BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED99F642BA9EB2B00D3C2BD /* Preview Assets.xcassets */; };
+		5ED99F6D2BA9EC0600D3C2BD /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5ED99F6C2BA9EC0600D3C2BD /* SwiftfulUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED99F6D2BA9EC0600D3C2BD /* SwiftfulUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = HowToUseSwiftfulUIInSwiftUI;
+			packageProductDependencies = (
+				5ED99F6C2BA9EC0600D3C2BD /* SwiftfulUI */,
+			);
 			productName = HowToUseSwiftfulUIInSwiftUI;
 			productReference = 5ED99F5A2BA9EB2900D3C2BD /* HowToUseSwiftfulUIInSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 5ED99F512BA9EB2900D3C2BD;
+			packageReferences = (
+				5ED99F6B2BA9EC0600D3C2BD /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+			);
 			productRefGroup = 5ED99F5B2BA9EB2900D3C2BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5ED99F6B2BA9EC0600D3C2BD /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5ED99F6C2BA9EC0600D3C2BD /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ED99F6B2BA9EC0600D3C2BD /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5ED99F522BA9EB2900D3C2BD /* Project object */;
 }
